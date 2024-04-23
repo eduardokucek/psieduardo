@@ -1,4 +1,76 @@
 <!DOCTYPE html>
-<html>
-<!-- Rest of the HTML code -->
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>Psico Eduardo Kucek</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        id="profile__image"
+        src="src/assets/eduardobw.jpg"
+        alt="Foto em preto e branco de Eduardo Kucek sorrindo, usando óculos, barba, de moletom cinza, e com fundo transparente."
+      />
+      <p>Psicólogo Eduardo Kucek</p>
+      <span>CRP-PR 08/29561</span>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <ul class="list">
+        <li class="item">
+          <img
+            class="item__icon"
+            src="src/assets/whatsapp.svg"
+            alt="WhatsApp logo"
+            fill="#ffffff"
+          />
+          <a href="https://wa.me/message/UL5EVSKJXIA6C1" target="_blank"
+            >Entre em contato</a
+          >
+        </li>
+        <li class="item">
+          <img
+            class="item__icon"
+            src="src/assets/instagram.svg"
+            alt="Instagram logo"
+          />
+          <a href="https://instagram.com/psieduardokucek" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li class="item">
+          <img class="item__icon" src="src/assets/book.svg" alt="Book logo" />
+          <a href="#">Indicação de livros</a>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      Copyright © Desenvolvido por
+      <a href="https://github.com/eduardokucek" target="_blank">Eduardo Kucek</a
+      >.
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./src/scripts/index.js"></script>
+  </body>
 </html>
