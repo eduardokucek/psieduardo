@@ -134,7 +134,7 @@ body * {
   display: flex;
 
   flex-direction: column;
-  gap: 16px;
+  gap: 22px;
 
   margin: 32px 0;
 
@@ -192,7 +192,7 @@ footer {
   padding: 24px 0;
   text-align: center;
 
-  font-size: 18px;
+  font-size: 14px;
 
   background: var(--highlight-color);
 }
