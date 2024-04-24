@@ -12,13 +12,13 @@ function toggleMode() {
   html.classList.toggle("light");
 
   if (html.classList.contains("light")) {
-    img.setAttribute("src", "./src/assets/eduardocolor.jpg");
+    img.setAttribute("src", "./src/assets/psieduardobw.jpg");
     img.setAttribute(
       "alt",
       "Foto colorida de Eduardo Kucek sorrindo, usando óculos, barba, de moletom cinza, e com fundo transparente."
     );
   } else {
-    img.setAttribute("src", "./src/assets/eduardobw.jpg");
+    img.setAttribute("src", "./src/assets/psieduardocolor.jpg");
     img.setAttribute(
       "alt",
       "Foto em preto e branco de Eduardo Kucek sorrindo, usando óculos, barba, de moletom cinza, e com fundo transparente."
