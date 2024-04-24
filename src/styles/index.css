@@ -43,6 +43,8 @@
 body {
   position: relative;
 
+  height: 100vh;
+
   transition: 0.3s;
 
   background: var(--bg-color);
@@ -193,10 +195,6 @@ footer {
 
 /* Media Queries */
 @media (max-width: 480px), (min-width: 481px) {
-  body {
-    height: 93vh;
-  }
-
   #switch {
     top: -36px;
     right: 16px;
@@ -215,10 +213,6 @@ footer {
 
   .light {
     --bg-url: url("../assets/bg-desktop-light.jpg");
-  }
-
-  body {
-    height: 94vh;
   }
 
   .container #profile__image {
