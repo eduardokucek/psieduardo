@@ -42,7 +42,6 @@
 
 body {
   position: relative;
-  height: 100vh;
 
   transition: 0.3s;
 
@@ -92,8 +91,6 @@ body * {
   position: absolute;
   width: 64px;
   margin: 0 auto;
-  top: 36px;
-  right: 380px;
 }
 
 #switch button {
@@ -198,7 +195,26 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 480px), (min-width: 481px) {
+  body {
+    height: 93vh;
+  }
+
+  #switch {
+    top: -36px;
+    right: 16px;
+  }
+
+  .container #profile__image {
+    height: 280px;
+    width: 280px;
+  }
+}
+
 @media (min-width: 700px) {
+  body {
+    height: 94vh;
+  }
   :root {
     --bg-url: url("../assets/bg-desktop.jpg");
   }
