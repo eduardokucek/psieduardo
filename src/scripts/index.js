@@ -6,10 +6,10 @@ function toggleMode() {
   html.classList.toggle("light");
 
   if (html.classList.contains("light")) {
-    img.setAttribute("src", "./src/assets/psieduardobw.jpg");
+    img.setAttribute("src", "./src/assets/eduardobw.jpg");
     img.setAttribute(
       "alt",
-      "Foto colorida de Eduardo Kucek sorrindo, usando óculos, de barba, de camiseta branca e paletó azul, e ao fundo uma estante de livros."
+      "Foto preto e branco de Eduardo Kucek sorrindo, usando óculos, de barba, de camiseta branca e paletó azul, e ao fundo uma estante de livros."
     );
   }
   // else {
