@@ -62,9 +62,6 @@ body * {
 }
 
 .container #profile__image {
-  height: 340px;
-  width: 340px;
-
   object-fit: cover;
 
   border-radius: 50%;
@@ -212,15 +209,21 @@ footer {
 }
 
 @media (min-width: 700px) {
-  body {
-    height: 94vh;
-  }
   :root {
     --bg-url: url("../assets/bg-desktop.jpg");
   }
 
   .light {
     --bg-url: url("../assets/bg-desktop-light.jpg");
+  }
+
+  body {
+    height: 94vh;
+  }
+
+  .container #profile__image {
+    height: 340px;
+    width: 340px;
   }
 }
 
