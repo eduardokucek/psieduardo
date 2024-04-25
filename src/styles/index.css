@@ -94,8 +94,6 @@ body * {
 
   width: 64px;
 
-  margin: 0 auto;
-
   cursor: pointer;
 }
 
@@ -202,15 +200,14 @@ footer {
   width: 100%;
 
   padding: 24px 0;
-
-  font-size: 14px;
+  
   text-align: center;
 
   background: var(--highlight-color);
 }
 
 /* Media Queries */
-@media (max-width: 480px), (min-width: 481px) and (max-width: 699px) {
+@media (max-width: 480px), (min-width: 481px) {
   #switch {
     top: -36px;
     right: 16px;
@@ -238,6 +235,10 @@ footer {
   .container #profile__image {
     height: 340px;
     width: 340px;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
 
