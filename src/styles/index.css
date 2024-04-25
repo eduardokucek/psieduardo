@@ -58,8 +58,11 @@ body * {
 .container {
   width: 100%;
   max-width: 588px;
+
   margin: 56px auto 0px;
+
   text-align: center;
+
   padding: 0 24px;
 }
 
@@ -88,21 +91,28 @@ body * {
 
 #switch {
   position: absolute;
+
   width: 64px;
+
   margin: 0 auto;
+
+  cursor: pointer;
 }
 
 #switch button {
   position: absolute;
-  z-index: 1;
   left: 0;
   top: -4px;
+
+  z-index: 1;
   height: 32px;
   width: 32px;
+
   background: #fff var(--switch-bg-url) no-repeat center;
+
   border: 0;
   border-radius: 50%;
-  cursor: pointer;
+
   animation: slide-out 0.4s;
 }
 
@@ -117,23 +127,26 @@ body * {
 
 #switch span {
   display: block;
+
   height: 24px;
   width: 64px;
+
   background: var(--surface-color);
+
   border: 1px solid var(--stroke-color);
+  border-radius: 9999px;
+
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 9999px;
 }
 
 .list {
   display: flex;
-
   flex-direction: column;
-  gap: 22px;
 
   margin: 32px 0;
 
+  gap: 22px;
   padding: 24px 0;
 }
 
@@ -164,7 +177,9 @@ body * {
 
 .list .item:hover {
   background: var(--surface-color-hover);
+
   border: 1px solid var(--text-color);
+
   cursor: pointer;
 }
 
@@ -173,22 +188,23 @@ body * {
 
   align-items: center;
   justify-content: center;
+
   gap: 16px;
+  padding: 24px 0;
 
   font-size: 24px;
-
-  padding: 24px 0;
 }
 
 footer {
   position: absolute;
   bottom: 0;
+
   width: 100%;
 
   padding: 24px 0;
-  text-align: center;
 
   font-size: 14px;
+  text-align: center;
 
   background: var(--highlight-color);
 }
