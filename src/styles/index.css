@@ -210,7 +210,7 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 480px), (min-width: 481px) {
+@media (max-width: 480px), (min-width: 481px) and (max-width: 699px) {
   #switch {
     top: -36px;
     right: 16px;
@@ -219,6 +219,10 @@ footer {
   .container #profile__image {
     height: 280px;
     width: 280px;
+  }
+
+  footer {
+    font-size: 12px;
   }
 }
 
