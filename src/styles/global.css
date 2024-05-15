@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+
+  height: 100vh;
+
+  transition: 0.3s;
+
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+:root {
+  --text-color: #fff;
+  --bg-color: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(36, 21, 113, 1) 35%,
+    rgba(130, 238, 253, 1) 100%
+  );
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --books-header-primary: rgba(19, 25, 33);
+  --books-header-secondary: rgba(35, 47, 62);
+  --books-text-primary: rgba(19, 25, 33);
+  --button-bg: rgba(255, 216, 20);
+  --logo-bg: rgba(255, 216, 20);
+  --switch-bg-url: url("../assets/moon-stars.svg");
+  --filter-icons: invert(100%) sepia(100%) saturate(0%) hue-rotate(-21deg)
+    brightness(137%) contrast(73%);
+  --scrollbar-bg: rgb(232, 232, 232);
+  --scrollbar-color: rgba(35, 47, 6);
+  --dialog-bg: rgb(255, 216, 20, 0.8);
+  --button-dialog-bg: rgb(255, 216, 20);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color);
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover);
+} */

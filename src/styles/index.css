@@ -1,28 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-
-:root {
-  --text-color: #fff;
-  --bg-color: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(36, 21, 113, 1) 35%,
-    rgba(130, 238, 253, 1) 100%
-  );
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.1);
-  --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url("../assets/moon-stars.svg");
-  --filter-icons: invert(100%) sepia(100%) saturate(0%) hue-rotate(-21deg)
-    brightness(137%) contrast(73%);
-}
-
 .light {
   --text-color: #000;
   --bg-color: linear-gradient(
@@ -41,18 +16,7 @@
 }
 
 body {
-  position: relative;
-
-  height: 100vh;
-
-  transition: 0.3s;
-
   background: var(--bg-color);
-}
-
-body * {
-  font-family: "Inter", sans-serif;
-  color: var(--text-color);
 }
 
 .container {
@@ -148,6 +112,10 @@ body * {
   padding: 24px 0;
 }
 
+.list > a {
+  color: var(--text-color);
+}
+
 .list .item {
   display: flex;
   align-items: center;
@@ -166,6 +134,15 @@ body * {
   font-weight: 500;
 
   transition: 0.3s;
+}
+
+.list .item .item__content {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 50%;
+
+  gap: 0 1.2rem;
 }
 
 .list .item .item__icon {
@@ -200,7 +177,7 @@ footer {
   width: 100%;
 
   padding: 24px 0;
-  
+
   text-align: center;
 
   background: var(--highlight-color);

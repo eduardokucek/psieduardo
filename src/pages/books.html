@@ -1,27 +1,122 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Books</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="stylesheet" href="/src/styles/books.css" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>Indicação de livros</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <img src="book1.jpg" alt="Book 1" />
-        <h3>Book 1 Title</h3>
-        <a href="book1_sell_link" class="button">Buy Now</a>
+    <header>
+      <div class="header__title">
+        <img src="/src/assets/brain.svg" alt="" />
+        <h2>Psicoamazon.com</h2>
       </div>
-      <div class="card">
-        <img src="book2.jpg" alt="Book 2" />
-        <h3>Book 2 Title</h3>
-        <a href="book2_sell_link" class="button">Buy Now</a>
-      </div>
-      <!-- Repeat the above card structure for the remaining books -->
-      <div class="card">
-        <img src="book6.jpg" alt="Book 6" />
-        <h3>Book 6 Title</h3>
-        <a href="book6_sell_link" class="button">Buy Now</a>
-      </div>
-    </div>
+      <div class="header__bottom"></div>
+    </header>
+    <main class="container">
+      <ul class="list__cards">
+        <li class="card">
+          <div class="card__img">
+            <img
+              src="/src/assets/dsm5tr.jpg"
+              alt="American Psychiatric Association - DSM-5-TR: Texto Revisado"
+            />
+          </div>
+          <div class="card__info">
+            <h3>American Psychiatric Association</h3>
+            <span
+              >Manual Diagnóstico e Estatístico de Transtornos Mentais -
+              DSM-5-TR: Texto Revisado</span
+            >
+            <a
+              href="https://www.amazon.com.br/dp/6558820935?coliid=I334OF1WLMX5LK&colid=3JZC1PE81X709&psc=1&linkCode=ll1&tag=psieduardo-20&linkId=51fbda78475418df46d1a1b7daf08726&language=pt_BR&ref_=as_li_ss_tl"
+              target="_blank"
+              class="button"
+              >Acessar</a
+            >
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card__img">
+            <img
+              src="/src/assets/psicofarmacos.jpg"
+              alt="Psicofármacos: Consulta rápida"
+            />
+          </div>
+          <div class="card__info">
+            <h3>Aristides Volpato Cordioli, Carolina Benedetto Gallois</h3>
+            <span>Psicofármacos: Consulta rápida</span>
+            <a
+              href="https://www.amazon.com.br/dp/6558821362?coliid=I10839PHR8KW6G&colid=3JZC1PE81X709&psc=1&linkCode=ll1&tag=psieduardo-20&linkId=25e33df96968e7687e3504f9d9e464d1&language=pt_BR&ref_=as_li_ss_tl"
+              target="_blank"
+              class="button"
+              >Acessar</a
+            >
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card__img">
+            <img
+              src="/src/assets/dalgalarrondo.jpg"
+              alt="Psicofármacos: Consulta rápida"
+            />
+          </div>
+          <div class="card__info">
+            <h3>Paulo Dalgalarrondo</h3>
+            <span>Psicopatologia e Semiologia dos Transtornos Mentais</span>
+            <a
+              href="https://www.amazon.com.br/dp/8582715056?coliid=I35OFCZBYVSQHJ&colid=3JZC1PE81X709&psc=1&linkCode=ll1&tag=psieduardo-20&linkId=0a8273446c22dd0e00147e3809abcdae&language=pt_BR&ref_=as_li_ss_tl"
+              target="_blank"
+              class="button"
+              >Acessar</a
+            >
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card__img">
+            <img
+              src="/src/assets/tccjudithbeck.jpg"
+              alt="Terapia Cognitivo Comportamental"
+            />
+          </div>
+          <div class="card__info">
+            <h3>Judith Beck</h3>
+            <span>Terapia Cognitivo Comportamental</span>
+            <a
+              href="https://www.amazon.com.br/dp/6558820935?coliid=I334OF1WLMX5LK&colid=3JZC1PE81X709&psc=1&linkCode=ll1&tag=psieduardo-20&linkId=51fbda78475418df46d1a1b7daf08726&language=pt_BR&ref_=as_li_ss_tl"
+              target="_blank"
+              class="button"
+              >Acessar</a
+            >
+          </div>
+        </li>
+      </ul>
+      <dialog>
+        <h3>Olá visitante!</h3>
+        <p>
+          Todos os livros indicados nesta página estão disponíveis na Amazon
+          Brasil. <br />
+          Basta clicar no botão "Acessar" para ser redirecionado à página de
+          compra. <br />
+        </p>
+        <button id="closeBtn">Ok</button>
+      </dialog>
+    </main>
+    <a href="#" id="top"></a>
+    <script src="/src/scripts/books.js"></script>
   </body>
 </html>

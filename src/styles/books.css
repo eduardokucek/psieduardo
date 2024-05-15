@@ -1,0 +1,195 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 140px;
+  width: 100%;
+
+  background-color: var(--books-header-primary);
+}
+
+header > img {
+  height: 100%;
+  width: auto;
+}
+
+header .header__title {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+
+  padding: 0 2rem;
+
+  gap: 0.4rem;
+}
+
+header .header__bottom {
+  display: flex;
+
+  height: 40px;
+  width: 100%;
+
+  background-color: var(--books-header-secondary);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.container .list__cards {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  padding: 2rem 2rem;
+  gap: 2rem 4rem;
+}
+
+.container .list__cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  height: 580px;
+  width: 300px;
+
+  gap: 1rem;
+}
+
+.container .list__cards .card .card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 0.2rem;
+}
+
+.container .list__cards .card .card__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .list__cards .card .card__img img {
+  width: 260px;
+}
+
+.container .list__cards .card h3 {
+  height: 4rem;
+
+  color: var(--books-text-primary);
+}
+
+.container .list__cards .card span {
+  height: 4rem;
+
+  text-align: left;
+
+  color: var(--books-text-primary);
+}
+
+.container .list__cards .card .button {
+  background-color: var(--button-bg);
+
+  height: 3rem;
+  width: auto;
+
+  text-align: center;
+  align-content: center;
+
+  border-radius: 50px 50px;
+
+  color: var(--books-text-primary);
+}
+
+.container .list__cards .card .button:hover {
+  background-color: rgb(247, 202, 0);
+}
+
+#top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  height: 40px;
+  width: 40px;
+
+  border-radius: 50%;
+
+  background-color: var(--books-header-primary);
+  background-image: url("../assets/uparrow.svg ");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+dialog {
+  position: absolute;
+  top: 18rem;
+  left: 34rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 40%;
+  width: 40%;
+
+  padding: 1rem;
+
+  line-height: 200%;
+
+  color: var(--books-header-primary);
+
+  border: none;
+  border-radius: 0.5rem;
+
+  background: var(--dialog-bg);
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+dialog button {
+  height: 40px;
+  width: 100px;
+
+  border: 2px solid var(--books-header-primary);
+  border-radius: 0.5rem;
+
+  color: var(--books-header-primary);
+
+  background: var(--button-dialog-bg);
+}
+
+/* Media Queries */
+@media (max-width: 480px), (min-width: 481px) {
+  dialog {
+    width: 80%;
+    left: 4rem;
+  }
+}
+
+@media (min-width: 700px) {
+  dialog {
+    width: 80%;
+    left: 5rem;
+  }
+}
+
+@media (min-width: 701px) {
+  dialog {
+    left: 8rem;
+  }
+}
