@@ -121,7 +121,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  padding: 16px 24px;
+  padding: 16px;
   gap: 8px;
 
   background: var(--surface-color);
@@ -138,9 +138,8 @@ body {
 
 .list .item .item__content {
   display: flex;
-  justify-content: flex-start;
 
-  width: 50%;
+  width: 230px;
 
   gap: 0 1.2rem;
 }

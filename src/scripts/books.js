@@ -1,19 +1,27 @@
 const dialog = document.querySelector("dialog");
 const closeBtn = document.querySelector("#closeBtn");
 
-dialog.showModal();
-document.querySelector("body").style.overflow = "hidden";
+window.addEventListener("load", function () {
+  dialog.showModal();
+  document.querySelector("body").style.overflow = "hidden";
+});
 
 closeBtn.onclick = function () {
   dialog.close();
-  dialog.style.display = "none";
+  dialog.classList.add("closing");
   document.querySelector("body").style.overflow = "auto";
+  dialog.addEventListener("animationend", function () {
+    dialog.style.display = "none";
+  });
 };
 
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     dialog.close();
-    dialog.style.display = "none";
+    dialog.classList.add("closing");
     document.querySelector("body").style.overflow = "auto";
+    dialog.addEventListener("animationend", function () {
+      dialog.style.display = "none";
+    });
   }
 });
