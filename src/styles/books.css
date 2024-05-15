@@ -39,8 +39,6 @@ header .header__bottom {
 .container {
   display: flex;
   flex-direction: column;
-
-  height: 100vh;
 }
 
 .container .list__cards {
@@ -49,8 +47,10 @@ header .header__bottom {
 
   flex-wrap: wrap;
 
+  margin-bottom: 2rem;
+
   padding: 2rem 2rem;
-  gap: 2rem 4rem;
+  gap: 4rem;
 }
 
 .container .list__cards .card {
@@ -59,7 +59,7 @@ header .header__bottom {
   justify-content: flex-start;
 
   height: 600px;
-  width: 300px;
+  width: 330px;
 
   padding: 1rem;
 
@@ -87,16 +87,20 @@ header .header__bottom {
   width: 260px;
 }
 
-.container .list__cards .card h3 {
+.container .list__cards .card p {
   height: 4rem;
+
+  font-size: 18px;
+  font-weight: bold;
 
   color: var(--books-text-primary);
 }
 
 .container .list__cards .card span {
-  height: 4rem;
+  height: 6rem;
 
   text-align: left;
+  font-size: 15px;
 
   color: var(--books-text-primary);
 }
