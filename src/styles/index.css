@@ -144,9 +144,19 @@ body {
   gap: 0 1.2rem;
 }
 
+.list .item #item__content-rs {
+  display: flex;
+
+  gap: 0 1.2rem;
+}
+
 .list .item .item__icon {
   width: 24px;
   filter: var(--filter-icons);
+}
+
+.list .item #item__icon-rs {
+  width: 24px;
 }
 
 .list .item:hover {
@@ -170,9 +180,6 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-
   width: 100%;
 
   padding: 24px 0;

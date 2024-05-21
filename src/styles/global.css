@@ -13,8 +13,6 @@ html {
 body {
   position: relative;
 
-  height: 100vh;
-
   transition: 0.3s;
 
   font-family: "Inter", sans-serif;
