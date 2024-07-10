@@ -169,53 +169,23 @@ dialog {
 
   background: var(--dialog-bg);
 
-  animation-name: dialogAnimation;
-  animation-duration: 0.6s;
-  animation-timing-function: ease-in-out;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+dialog.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+dialog.hide {
+  opacity: 0;
+  transform: translateY(-100%);
 }
 
 dialog > button:hover {
   background-color: rgb(247, 202, 0);
-}
-
-@keyframes dialogAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-    background: linear-gradient(0deg, var(--dialog-bg) 0%, var(--dialog-bg) 0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    background: linear-gradient(
-      0deg,
-      var(--dialog-bg) 0%,
-      var(--dialog-bg) 100%
-    );
-  }
-}
-
-.closing {
-  animation-name: dialogClosingAnimation;
-  animation-duration: 0.6s;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes dialogClosingAnimation {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-    background: linear-gradient(
-      0deg,
-      var(--dialog-bg) 0%,
-      var(--dialog-bg) 100%
-    );
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100%);
-    background: linear-gradient(0deg, var(--dialog-bg) 0%, var(--dialog-bg) 0%);
-  }
 }
 
 dialog::backdrop {

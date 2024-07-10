@@ -1,27 +1,40 @@
 const dialog = document.querySelector("dialog");
-const closeBtn = document.querySelector("#closeBtn");
+const closeBtn = document.getElementById("closeBtn");
 
 window.addEventListener("load", function () {
   dialog.showModal();
-  document.querySelector("body").style.overflow = "hidden";
+  requestAnimationFrame(() => {
+    dialog.classList.add("show");
+  });
+  document.body.style.overflow = "hidden";
 });
 
 closeBtn.onclick = function () {
-  dialog.close();
-  dialog.classList.add("closing");
-  document.querySelector("body").style.overflow = "auto";
-  dialog.addEventListener("animationend", function () {
-    dialog.style.display = "none";
-  });
+  dialog.classList.remove("show");
+  dialog.classList.add("hide");
+  dialog.addEventListener(
+    "transitionend",
+    function () {
+      dialog.close();
+      dialog.classList.remove("hide");
+      document.body.style.overflow = "auto";
+    },
+    { once: true }
+  );
 };
 
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
-    dialog.close();
-    dialog.classList.add("closing");
-    document.querySelector("body").style.overflow = "auto";
-    dialog.addEventListener("animationend", function () {
-      dialog.style.display = "none";
-    });
+    dialog.classList.remove("show");
+    dialog.classList.add("hide");
+    dialog.addEventListener(
+      "transitionend",
+      function () {
+        dialog.close();
+        dialog.classList.remove("hide");
+        document.body.style.overflow = "auto";
+      },
+      { once: true }
+    );
   }
 });
