@@ -1,7 +1,9 @@
 header {
   position: sticky;
   top: 0;
+
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
 
@@ -19,12 +21,21 @@ header > img {
 header .header__title {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   height: 100%;
+  width: 90%;
 
   padding: 0 2rem;
 
   gap: 0.4rem;
+}
+
+header .header__title div {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
 }
 
 header .header__bottom {
@@ -34,6 +45,25 @@ header .header__bottom {
   width: 100%;
 
   background-color: var(--books-header-secondary);
+}
+
+#home_button {
+  height: 50px;
+  width: 50px;
+
+  background-image: url("../assets/home.svg ");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+#home_button:hover {
+  background-color: aliceblue;
+
+  background-image: url("../assets/homedark.svg");
+
+  border-radius: 50%;
 }
 
 .container {
@@ -62,9 +92,6 @@ header .header__bottom {
   width: 330px;
 
   padding: 1rem;
-
-  /* border: 1px solid rgba(19, 25, 33, 0.2);
-  border-radius: 0.5rem; */
 
   gap: 1rem;
 }

@@ -1,16 +1,11 @@
 .light {
   --text-color: #000;
-  --bg-color: linear-gradient(
-    180deg,
-    rgba(57, 68, 188, 1) 0%,
-    rgba(99, 197, 218, 1) 35%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  --bg-color: #79c4f2;
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.05);
   --highlight-color: rgba(0, 0, 0, 0.2);
-  --switch-bg-url: url("../assets/sun.svg");
+  --switch-bg-url: url("../assets/moon-stars.svg");
   --filter-icons: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg)
     brightness(100%) contrast(100%);
   --img-profile: rgba(0, 0, 0, 0.5);

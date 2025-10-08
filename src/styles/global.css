@@ -1,26 +1,21 @@
 :root {
   --text-color: #fff;
-  --bg-color: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(36, 21, 113, 1) 35%,
-    rgba(130, 238, 253, 1) 100%
-  );
+  --bg-color: #090e26;
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --books-header-primary: rgba(19, 25, 33);
+  --books-header-primary: rgb(19, 25, 33);
   --books-header-secondary: rgba(35, 47, 62);
   --books-text-primary: rgba(19, 25, 33);
   --button-bg: rgba(255, 216, 20);
   --logo-bg: rgba(255, 216, 20);
-  --switch-bg-url: url("../assets/moon-stars.svg");
+  --switch-bg-url: url("../assets/sun.svg");
   --filter-icons: invert(100%) sepia(100%) saturate(0%) hue-rotate(-21deg)
     brightness(137%) contrast(73%);
   --scrollbar-bg: rgb(232, 232, 232);
   --scrollbar-color: rgba(0, 0, 0, 0.5);
-  --dialog-bg: rgb(255, 216, 20, 0.8);
+  --dialog-bg: rgb(255, 216, 20);
   --button-dialog-bg: rgb(255, 216, 20);
   --img-profile: rgb(255, 250, 240);
 }
