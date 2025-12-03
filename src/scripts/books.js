@@ -6,7 +6,6 @@ window.addEventListener("load", function () {
   requestAnimationFrame(() => {
     dialog.classList.add("show");
   });
-  document.body.style.overflow = "hidden";
 });
 
 closeBtn.onclick = function () {
@@ -17,7 +16,10 @@ closeBtn.onclick = function () {
     function () {
       dialog.close();
       dialog.classList.remove("hide");
-      document.body.style.overflow = "auto";
+      // window.scrollTo({
+      //   top: 0,
+      //   behavior: "smooth",
+      // });
     },
     { once: true }
   );
@@ -32,7 +34,6 @@ document.addEventListener("keydown", function (event) {
       function () {
         dialog.close();
         dialog.classList.remove("hide");
-        document.body.style.overflow = "auto";
       },
       { once: true }
     );

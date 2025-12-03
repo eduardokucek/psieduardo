@@ -7,6 +7,7 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/global.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
     <link
@@ -17,22 +18,24 @@
     <title>Psico Eduardo Kucek</title>
   </head>
   <body>
-    <div class="container">
-      <img
-        id="profile__image"
-        src="src/assets/eduardo.jpg"
-        alt="Foto colorida de Eduardo Kucek sorrindo, usando óculos, de barba, de camiseta branca e paletó azul, e ao fundo uma estante de livros."
-      />
-      <p>Psicólogo Eduardo Kucek</p>
-      <span>CRP 08/29561</span>
+    <main class="container">
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
       </div>
-      <ul class="list">
-        <a href="https://wa.me/message/UL5EVSKJXIA6C1" target="_blank">
-          <li class="item">
-            <div class="item__content">
+      <header class="header__title">
+        <img
+          id="profile__image"
+          src="src/assets/eduardo.jpg"
+          alt="Foto colorida de Eduardo Kucek sorrindo, usando óculos, de barba, de camiseta branca e paletó azul, e ao fundo uma estante de livros."
+        />
+        <p>Psicólogo Eduardo Kucek</p>
+        <span>CRP 08/29561</span>
+      </header>
+      <nav class="links_container">
+        <ul class="links_list">
+          <li class="item__link">
+            <a href="https://wa.me/message/UL5EVSKJXIA6C1" target="_blank">
               <img
                 class="item__icon"
                 src="src/assets/whatsapp.svg"
@@ -40,35 +43,31 @@
                 fill="#ffffff"
               />
               <span>Agende sua sessão</span>
-            </div>
+            </a>
           </li>
-        </a>
-        <a href="https://instagram.com/eduardo.kucek" target="_blank">
-          <li class="item">
-            <div class="item__content">
+          <li class="item__link">
+            <a href="https://instagram.com/eduardo.kucek" target="_blank">
               <img
                 class="item__icon"
                 src="src/assets/instagram.svg"
                 alt="Instagram logo"
               />
               <span>Conheça meu Instagram</span>
-            </div>
+            </a>
           </li>
-        </a>
-        <a href="src/pages/books.html">
-          <li class="item">
-            <div class="item__content">
+          <li class="item__link">
+            <a href="src/pages/books.html">
               <img
                 class="item__icon"
                 src="src/assets/book.svg"
                 alt="Book logo"
               />
               <span>Indicação de livros</span>
-            </div>
+            </a>
           </li>
-        </a>
-      </ul>
-    </div>
+        </ul>
+      </nav>
+    </main>
     <footer>
       © 2025 Todos os direitos reservados | Desenvolvido por
       <a href="https://github.com/eduardokucek" target="_blank">eduardo</a>.
