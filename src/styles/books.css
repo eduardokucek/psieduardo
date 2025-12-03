@@ -170,7 +170,7 @@ dialog {
   position: fixed;
 
   top: 50%;
-  left: 50%;
+  left: 25%;
 
   margin-left: auto;
   margin-right: auto;
@@ -252,6 +252,10 @@ dialog button {
   .header .header__content h1 {
     font-size: 24px;
   }
+
+  dialog {
+    left: 50%;
+  }
 }
 
 @media (min-width: 700px) {
@@ -278,5 +282,9 @@ dialog button {
 
   .header .header__bottom {
     height: 40px;
+  }
+
+  dialog {
+    left: 25%;
   }
 }
